@@ -52,9 +52,9 @@ task.setDelegate( delegate.getClassInstance() )
 task.execWithLaunchPath_arguments("/usr/bin/curl", ["https://google.com"])
 ```
 
-### Development
+## Development
 
-Make sure you pull its submodules.
+Make sure you pull its submodules first.
 
 ```
 $ git submodule update --init
