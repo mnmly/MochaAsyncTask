@@ -11,7 +11,6 @@ import Foundation
 @objc public protocol AsyncTaskProtocol {
     func onData(_ data: String) -> Void
     func onEnd() -> Void
-    func onTermination() -> Void
 }
 
 @objc public class AsyncTask: NSObject {
@@ -37,12 +36,13 @@ import Foundation
             
             if data.count > 0 {
                 if let str = String(data: data, encoding: String.Encoding.utf8) {
-                    self.delegate?.onData(str)
+                    if (self.delegate as? NSObject)?.responds(to: Selector("onData:")) == true {
+                        self.delegate?.onData(str)
+                    }
                 }
                 outHandle.waitForDataInBackgroundAndNotify()
             } else {
                 NotificationCenter.default.removeObserver(progressObserver)
-                self.delegate?.onEnd()
             }
         }
         
@@ -53,7 +53,9 @@ import Foundation
         {
             notification -> Void in
             NotificationCenter.default.removeObserver(terminationObserver)
-            self.delegate?.onTermination()
+            if (self.delegate as? NSObject)?.responds(to: Selector("onEnd")) == true {
+                self.delegate?.onEnd()
+            }
         }
         
         task.launch()

@@ -9,13 +9,84 @@
 /* Begin PBXBuildFile section */
 		99DA4D5E1E860EDF00AFDD53 /* MochaAsyncTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DA4D5C1E860EDF00AFDD53 /* MochaAsyncTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99DA4D651E860EFA00AFDD53 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA4D641E860EFA00AFDD53 /* AsyncTask.swift */; };
+		99DA4D7C1E8612FC00AFDD53 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA4D7B1E8612FC00AFDD53 /* main.swift */; };
+		99DA4D831E86155B00AFDD53 /* CocoaScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DA4D721E8612D100AFDD53 /* CocoaScript.framework */; };
+		99DA4D861E8616A500AFDD53 /* example.js in Resources */ = {isa = PBXBuildFile; fileRef = 99DA4D841E86167800AFDD53 /* example.js */; };
+		99DA4D871E8617E000AFDD53 /* example.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99DA4D841E86167800AFDD53 /* example.js */; };
+		99DA4D891E86184500AFDD53 /* MochaJSDelegate.js in Resources */ = {isa = PBXBuildFile; fileRef = 99DA4D881E86184500AFDD53 /* MochaJSDelegate.js */; };
+		99DA4D8A1E86184C00AFDD53 /* MochaJSDelegate.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99DA4D881E86184500AFDD53 /* MochaJSDelegate.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99DA4D6D1E8612D100AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D15AC370486D014006FF6A4;
+			remoteInfo = "Cocoa Script Editor";
+		};
+		99DA4D6F1E8612D100AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC5FB7C20F1FDCCC00F4ECC2;
+			remoteInfo = "coscript tool";
+		};
+		99DA4D711E8612D100AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC41431A0F25254200E46669;
+			remoteInfo = "Cocoa Script Framework";
+		};
+		99DA4D731E8612D100AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC343C71AF7D2FE00B53759;
+			remoteInfo = CocoaScriptTests;
+		};
+		99DA4D811E86143F00AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CC4143190F25254200E46669;
+			remoteInfo = "Cocoa Script Framework";
+		};
+		99DA4D8B1E86192B00AFDD53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DA4D501E860EDF00AFDD53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99DA4D581E860EDF00AFDD53;
+			remoteInfo = MochaAsyncTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99DA4D771E8612FC00AFDD53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				99DA4D8A1E86184C00AFDD53 /* MochaJSDelegate.js in CopyFiles */,
+				99DA4D871E8617E000AFDD53 /* example.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		99DA4D591E860EDF00AFDD53 /* MochaAsyncTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MochaAsyncTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DA4D5C1E860EDF00AFDD53 /* MochaAsyncTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MochaAsyncTask.h; sourceTree = "<group>"; };
 		99DA4D5D1E860EDF00AFDD53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99DA4D641E860EFA00AFDD53 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
+		99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cocoa Script.xcodeproj"; path = "deps/CocoaScript/Cocoa Script.xcodeproj"; sourceTree = "<group>"; };
+		99DA4D791E8612FC00AFDD53 /* MochaAsyncTaskExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MochaAsyncTaskExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DA4D7B1E8612FC00AFDD53 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99DA4D801E86131500AFDD53 /* MochaAsyncTaskExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MochaAsyncTaskExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		99DA4D841E86167800AFDD53 /* example.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = example.js; sourceTree = "<group>"; };
+		99DA4D881E86184500AFDD53 /* MochaJSDelegate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MochaJSDelegate.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +97,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99DA4D761E8612FC00AFDD53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DA4D831E86155B00AFDD53 /* CocoaScript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,7 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				99DA4D5B1E860EDF00AFDD53 /* MochaAsyncTask */,
+				99DA4D7A1E8612FC00AFDD53 /* MochaAsyncTaskExample */,
 				99DA4D5A1E860EDF00AFDD53 /* Products */,
+				99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				99DA4D591E860EDF00AFDD53 /* MochaAsyncTask.framework */,
+				99DA4D791E8612FC00AFDD53 /* MochaAsyncTaskExample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +135,28 @@
 				99DA4D641E860EFA00AFDD53 /* AsyncTask.swift */,
 			);
 			path = MochaAsyncTask;
+			sourceTree = "<group>";
+		};
+		99DA4D671E8612D100AFDD53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99DA4D6E1E8612D100AFDD53 /* Cocoa Script Editor.app */,
+				99DA4D701E8612D100AFDD53 /* coscript */,
+				99DA4D721E8612D100AFDD53 /* CocoaScript.framework */,
+				99DA4D741E8612D100AFDD53 /* CocoaScriptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99DA4D7A1E8612FC00AFDD53 /* MochaAsyncTaskExample */ = {
+			isa = PBXGroup;
+			children = (
+				99DA4D881E86184500AFDD53 /* MochaJSDelegate.js */,
+				99DA4D7B1E8612FC00AFDD53 /* main.swift */,
+				99DA4D801E86131500AFDD53 /* MochaAsyncTaskExample-Bridging-Header.h */,
+				99DA4D841E86167800AFDD53 /* example.js */,
+			);
+			path = MochaAsyncTaskExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,12 +191,33 @@
 			productReference = 99DA4D591E860EDF00AFDD53 /* MochaAsyncTask.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		99DA4D781E8612FC00AFDD53 /* MochaAsyncTaskExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99DA4D7D1E8612FC00AFDD53 /* Build configuration list for PBXNativeTarget "MochaAsyncTaskExample" */;
+			buildPhases = (
+				99DA4D751E8612FC00AFDD53 /* Sources */,
+				99DA4D851E86169F00AFDD53 /* Resources */,
+				99DA4D761E8612FC00AFDD53 /* Frameworks */,
+				99DA4D771E8612FC00AFDD53 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99DA4D8C1E86192B00AFDD53 /* PBXTargetDependency */,
+				99DA4D821E86143F00AFDD53 /* PBXTargetDependency */,
+			);
+			name = MochaAsyncTaskExample;
+			productName = MochaAsyncTaskExample;
+			productReference = 99DA4D791E8612FC00AFDD53 /* MochaAsyncTaskExample */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		99DA4D501E860EDF00AFDD53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Hiroaki Yamane";
 				TargetAttributes = {
@@ -100,6 +225,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GP3ES2Y53G;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					99DA4D781E8612FC00AFDD53 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GP3ES2Y53G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,18 +244,65 @@
 			mainGroup = 99DA4D4F1E860EDF00AFDD53;
 			productRefGroup = 99DA4D5A1E860EDF00AFDD53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99DA4D671E8612D100AFDD53 /* Products */;
+					ProjectRef = 99DA4D661E8612D100AFDD53 /* Cocoa Script.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				99DA4D581E860EDF00AFDD53 /* MochaAsyncTask */,
+				99DA4D781E8612FC00AFDD53 /* MochaAsyncTaskExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99DA4D6E1E8612D100AFDD53 /* Cocoa Script Editor.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Cocoa Script Editor.app";
+			remoteRef = 99DA4D6D1E8612D100AFDD53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99DA4D701E8612D100AFDD53 /* coscript */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = coscript;
+			remoteRef = 99DA4D6F1E8612D100AFDD53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99DA4D721E8612D100AFDD53 /* CocoaScript.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaScript.framework;
+			remoteRef = 99DA4D711E8612D100AFDD53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99DA4D741E8612D100AFDD53 /* CocoaScriptTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaScriptTests.xctest;
+			remoteRef = 99DA4D731E8612D100AFDD53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99DA4D571E860EDF00AFDD53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99DA4D851E86169F00AFDD53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DA4D861E8616A500AFDD53 /* example.js in Resources */,
+				99DA4D891E86184500AFDD53 /* MochaJSDelegate.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +317,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99DA4D751E8612FC00AFDD53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DA4D7C1E8612FC00AFDD53 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99DA4D821E86143F00AFDD53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cocoa Script Framework";
+			targetProxy = 99DA4D811E86143F00AFDD53 /* PBXContainerItemProxy */;
+		};
+		99DA4D8C1E86192B00AFDD53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99DA4D581E860EDF00AFDD53 /* MochaAsyncTask */;
+			targetProxy = 99DA4D8B1E86192B00AFDD53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		99DA4D5F1E860EDF00AFDD53 /* Debug */ = {
@@ -242,6 +440,7 @@
 		99DA4D621E860EDF00AFDD53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -265,6 +464,7 @@
 		99DA4D631E860EDF00AFDD53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -280,6 +480,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnmly.MochaAsyncTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		99DA4D7E1E8612FC00AFDD53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GP3ES2Y53G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99DA4D7F1E8612FC00AFDD53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GP3ES2Y53G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +521,14 @@
 			buildConfigurations = (
 				99DA4D621E860EDF00AFDD53 /* Debug */,
 				99DA4D631E860EDF00AFDD53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99DA4D7D1E8612FC00AFDD53 /* Build configuration list for PBXNativeTarget "MochaAsyncTaskExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99DA4D7E1E8612FC00AFDD53 /* Debug */,
+				99DA4D7F1E8612FC00AFDD53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

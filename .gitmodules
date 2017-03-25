@@ -1,0 +1,3 @@
+[submodule "deps/CocoaScript"]
+	path = deps/CocoaScript
+	url = git@github.com:ccgus/CocoaScript.git
