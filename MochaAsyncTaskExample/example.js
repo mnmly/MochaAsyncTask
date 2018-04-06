@@ -19,6 +19,11 @@ let AsyncTask = NSClassFromString( "MochaAsyncTask.AsyncTask" )
 let task = AsyncTask.alloc().init()
 let delegate = new MochaJSDelegate()
 
+//delegate.setHandlerForSelector("onError:", (data)=> {
+//    log(data)
+//})
+//
+
 delegate.setHandlerForSelector("onData:", (data)=> {
     log(data)
 })
