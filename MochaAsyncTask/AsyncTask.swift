@@ -18,7 +18,7 @@ import Foundation
     
     @objc public var delegate: AsyncTaskProtocol?
     
-    public func exec(launchPath: String, arguments: [String]?) {
+    @objc public func exec(launchPath: String, arguments: [String]?) {
         
         let task = Process()
         task.launchPath = launchPath
